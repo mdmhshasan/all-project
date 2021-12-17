@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>login-form-2</title>
+		<style type="text/css">
+		*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		body{
+		margin: 0;
+		padding: 0;
+		background: #a5a5a5;
+		overflow: hidden;
+		}
+		.form-box{
+		width: 100%;
+		padding: 20px 0;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		display: flex;
+		}
+		.total-box{
+		display: grid;
+		grid-template-columns: auto auto;
+		}
+		.form-box .page-title{
+		font-size: 20px;
+		color: #000;
+		text-transform: capitalize;
+		padding: 20px 0px;
+		}
+		.form-box .left-box{
+		padding: 30px 20px;
+		background: #fff;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		margin: 0;
+		padding-bottom: 100px;
+		}
+		.form-box .right-box{
+		padding: 30px 20px;
+		background: #341f97;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		margin: 0;
+		}
+		.right-box .page-title span{
+		font-size: 20px;
+		color: #000;
+		text-align: left;
+		padding: 10px;
+		}
+		.right-box .zip-place{
+		display: flex;
+		}
+		.right-box .zip-place input{
+		border: none;
+		border-bottom: 2px solid #eee;
+		font-size: 15px;
+		color: #000;
+		text-align: center;
+		text-transform: capitalize;
+		background: none;
+		padding: 5px;
+		text-align: left;
+		margin: 5px;
+		width: 130px;
+		}
+		.right-box .zip-place select{
+		border: none;
+		background: none;
+		border-bottom: 2px solid #fff;
+		font-size: 15px;
+		text-align: left;
+		text-transform: capitalize;
+		padding: 7px 50px;
+		margin-left: 15px;
+		width: 100%;
+		color: #000;
+		}
+		.right-box .code-phone{
+		display: flex;
+		padding: 5px 0px;
+		}
+		.left-box .slect{
+		padding: 10px 0px;
+		}
+		.left-box select{
+		border: none;
+		width: 100%;
+		background:transparent;
+		font-size: 15px;
+		color: #000;
+		border-bottom: 2px solid #fff;
+		}
+		.left-box input{
+		}
+		.left-box .username{
+		padding: 10px 0px;
+		}
+		.left-box .username input{
+		border: none;
+		background: none;
+		font-size: 15px;
+		color: #000;
+		border-bottom: 2px solid #000;
+		margin: 5px;
+		padding: 5px;
+		}
+		.left-box .position{
+		padding: 10px 0px;
+		}
+		.left-box .position select{
+		border: none;
+		background: transparent;
+		font-size: 15px;
+		color: #000;
+		border-bottom: 2px solid #000;
+		}
+		.left-box .company{
+		padding: 10px 0px;
+		}
+		.left-box .company input{
+		border: none;
+		background: none;
+		border-bottom: 2px solid #000;
+		font-size: 15px;
+		width: 100%;
+		padding: 5px;
+		}
+		.left-box .bisness{
+		padding: 10px 0px;
+		display: flex;
+		}
+		.left-box .bisness input,.edition{
+		border: none;
+		background: none;
+		border-bottom: 2px solid #000;
+		font-size: 15px;
+		padding: 5px;
+		margin: 5px;
+		}
+		.right-box .editional{
+		padding: 10px 0px;
+		}
+		.form-box .right-box .adetional .edition{
+		border: none;
+		border: 2px solid red;
+		}
+		.right-box .cuntry{
+		padding: 10px;
+		}
+		.right-box .cuntry input{
+		border: none;
+		border-bottom: 2px solid #fff;
+		font-size: 15px;
+		text-align: left;
+		text-transform: capitalize;
+		background: none;
+		padding: 5px;
+		}
+		.right-box .code-phone input{
+		border: none;
+		background: none;
+		text-align: left;
+		text-transform: capitalize;
+		border-bottom: 2px solid #fff;
+		padding: 5px;
+		margin: 5px;
+		width: 100%;
+		}
+		.right-box .code-phone .code{
+		width: 100px;
+		margin: 7px;
+		}
+		.right-box .phone{
+		padding: 0px 40px;
+		}
+		.right-box .email{
+		padding: 10px 10px;
+		}
+		.right-box .email input{
+		border: none;
+		background: none;
+		text-align: left;
+		text-transform: capitalize;
+		border-bottom: 2px solid #fff;
+		padding: 5px;
+		margin: 5px;
+		width: 100%;
+		}
+		.right-box input:focus{
+		border-color: #21f123;
+		outline: none;
+		}
+		form select{
+		color: #fff;
+		background: black;
+		}
+		.right-box .radio{
+		padding: 10px;
+		display: inline-block;
+		display: flex;
+		padding: 10px 30px;
+		}
+		.right-box .radio input{
+		text-align: center;
+		}
+		.right-box .radio p{
+		padding: 0px 10px;
+		margin: 0px 20px;
+		font-size: 15px;
+		color: #fff;
+		text-transform: capitalize;
+		text-align: center;
+		}
+		.right-box .radio a{
+		margin: 10px;
+		}
+		.right-box .save-btn{
+		padding: 20px 0px;
+		position: relative;
+		top: 20px;
+		right: -35%;
+		}
+		.right-box .save-btn input{
+		border: none;
+		background: none;
+		padding: 10px 20px;
+		background: #21f123;
+		border-radius: 5px;
+		font-size: 15px;
+		text-align: center;
+		text-transform: capitalize;
+		color: #fff;
+		font-weight: bold;
+		}
+		.save-btn{
+			position: relative;
+		margin: 0px auto;
+		}
+		input{
+			outline: none;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="form-box">
+			<form action="#" target="blank">
+				<div class="total-box">
+					<div class="left-box">
+						<div class="page-title">
+							<h1>general information</h1>
+						</div>
+						<div class="slect">
+							<select>
+								<option>title</option>
+								<option>name </option>
+								<option>about</option>
+								<option>contact</option>
+								<option>anyone</option>
+								<option>ather</option>
+							</select>
+						</div>
+						<div class="username">
+							<input type="text" placeholder="first name" name="first-name" />
+							<input type="text" placeholder="last name" name="first-name" />
+						</div>
+						<div class="position">
+							<select>
+								<option>position</option>
+								<option>position</option>
+								<option>position</option>
+								<option>position</option>
+								<option>position</option>
+							</select>
+						</div>
+						<div class="company">
+							<input type="text" placeholder="company" name="company"/>
+						</div>
+						<div class="bisness">
+							<input type="text" placeholder="bisness area" name="bisness"/>
+							<input type="text" placeholder="employes" name="employes"/>
+						</div>
+					</div>
+					<!-- right area start here -->
+					<div class="right-box">
+						<div class="page-title">
+							<h1>contact details</h1>
+							<span>str::nr</span>
+						</div>
+						<div class="editional">
+							<input type="text" class="edition" placeholder="adetional information" name="informaion"/>
+						</div>
+						<div class="zip-place">
+							<div class="code">
+								<input type="text" placeholder="zipcode" name="zipcode"/>
+							</div>
+							<div class="plece">
+								<select>
+									<option>plece</option>
+									<option>plece</option>
+									<option>plece</option>
+									<option>plece</option>
+									<option>plece</option>
+									<option>plece</option>
+								</select>
+							</div>
+						</div>
+						<div class="cuntry">
+							<input type="text" placeholder="cuntry" name="cuntry"/>
+						</div>
+						<div class="code-phone">
+							<div class="code">
+								<input type="text" class="code" placeholder="code+" name="code">
+							</div>
+							<div class="phone">
+								<input type="phone" placeholder="phone number" name="phone"/>
+							</div>
+						</div>
+						<div class="email">
+							<input type="email" placeholder="email" name="email"/>
+						</div>
+						<div class="radio">
+							<input type="radio" name="radio"/>
+							<p>i do accapt the<a href="#">turms cundetion</a>of your site.</p>
+						</div>
+						<div class="save-btn">
+							<input type="submit" value="save-data" />
+						</div>
+						
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

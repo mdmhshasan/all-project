@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>login-form-1</title>
+		<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+display: flex;
+transition: .5s;
+}
+.form-box{
+padding: 50px;
+display: flex;
+}
+.form-box .left-box{
+width: 350px;
+height: 510px;
+background: #0041AD;
+padding: 15px;
+}
+.form-box .left-box img{
+width: 100%;
+height: auto;
+transition: .5s ease-in-out;
+box-shadow: 2px 2px -3px 3px rgba(6, 82, 221,1.0);
+border: 3px solid transparent;
+border-image: linear-gradient(80deg,#2196f3,#ff2020);
+border-image-slice: 2;
+}
+.form-box .left-box img:hover{
+transform: scale(.9);
+}
+.form-box .left-box a .googlebtn1,.googlebtn2{
+position: relative;
+top: 0;
+left: 0;
+border: none;
+padding: 15px 60px;
+font-size: 15px;
+text-transform: capitalize;
+color: #fff;
+font-weight: 600;
+text-align: center;
+margin: 10px;
+margin-left: 16px;
+cursor: pointer;
+border: 1px solid #2196f3;
+background: transparent;
+border-top: 2px dotted #21f123;
+border-bottom: 2px dotted #21f123;
+border-right: 2px solid #21f123;
+border-left: 2px solid #21f123;
+}
+.form-box .left-box a .googlebtn2{
+position: relative;
+left: -10px;
+border-radius: 0;
+}
+.form-box .left-box a .googlebtn2:hover{
+box-shadow: -2px -2px 5px #21f123,2px 2px 5px #21f123;
+}
+.form-box .left-box a .googlebtn1:hover{
+box-shadow: -2px -2px 5px #21f123,2px 2px 5px #21f123;
+}
+.form-box .left-box  a{
+padding: 15px;
+}
+.form-box .left-box a button:hover{
+background:#21f123;
+color: #000;
+transition: .5s ease-in-out;
+}
+.left-box h1{
+padding: 35px;
+font-size: 40px;
+text-align: center;
+text-transform: capitalize;
+color: #fff;
+letter-spacing: 1px;
+}
+.left-box h5{
+text-align: center;
+font-size: 20px;
+color: #fff;
+font-weight: 800;
+}
+/* right arae style start here */
+.form-box .right-box{
+width: 380px;
+height: 510px;
+background: #eee;
+padding: 15px;
+transition: .5s;
+border-top-right-radius: 15px;
+}
+.right-box .menu-button{
+padding: 4px;
+background: transparent;
+display: inline-block;
+float: none;
+margin: 20px;
+transform: translate(154px,-36%);
+}
+.right-box .menu-button .login-btn{
+border: none;
+padding: 10px;
+background: nonoe;
+background: none;
+font-size: 14px;
+color: #000;
+text-transform: uppercase;
+background:#eee;
+border-radius: 3px;
+box-shadow: -2px -2px 3px #eee,2px 2px 5px #eee;
+cursor: pointer;
+}
+
+.right-box .menu-button .login-btn:first-child{
+background: #0652DD;
+color: #eee;
+}
+.right-box .menu-button .login-btn:first-child:hover{
+background:#5f27cd ;
+}
+.right-box .name-box,.pass-box{
+display: grid;
+grid-template-columns: auto auto;
+padding: 30px 0px;
+}
+.right-box .name-box .fname-box ,.pass-box .new-pass {
+padding: 5px;
+}
+.right-box .name-box .lname-box,.pass-box .con-pass {
+padding: 5px;
+}
+.name-box .lname-box input,.pass-box .new-pass input{
+border: none;
+background: none;
+border-bottom: 2px solid #bbb;
+font-size: 12px;
+outline: none;
+padding: 5px 10px;
+border-radius: 0;
+}
+.name-box .fname-box input,.pass-box .con-pass input{
+border: none;
+background: none;
+border-bottom: 2px solid #bbb;
+font-size: 12px;
+outline: none;
+padding: 5px 10px;
+border-radius: 0;
+transition: .5s ease-in-out;
+}
+.right-box input:hover{
+border-color: #44bd32;
+transition: .2s ease-in-out;
+}
+.name-box .fname-box input::placeholder,.pass-box .new-pass input::placeholder{
+color:#bbb;
+text-transform: capitalize;
+letter-spacing: 1px;
+font-weight: 600;
+outline: none;
+}
+.name-box .left-box{
+transition: .4s;
+}
+.name-box .lname-box input::placeholder,.pass-box .con-pass input::placeholder{
+color:#bbb;
+text-transform: capitalize;
+letter-spacing: 1px;
+font-weight: 600;
+outline: none;
+}
+.right-box .name-box label,.pass-box .new-pass label,.pass-box .con-pass label{
+position: relative;
+top: -10px;
+left: 5px;
+text-transform: capitalize;
+}
+.email-box{
+padding: 10px 10px;
+}
+.email-box input{
+display: inline-table;
+width: 310px;
+padding: 5px;
+border: none;
+border-bottom: 2px solid #bbb;
+background: none;
+font-size: 14px;
+text-transform: capitalize;
+text-align: left;
+color: #000;
+outline: none;
+border-radius: 0;
+}
+.email-box label{
+position: relative;
+top: -10px;
+left: -3px;
+text-transform: capitalize;
+}
+.right-box input[type="submit"]{
+border: none;
+padding: 15px 80px;
+font-size: 15px;
+text-transform: capitalize;
+text-align: center;
+color: #fff;
+background: none;
+outline: none;
+border-radius: 5px;
+background: #0652DD;
+position: relative;
+cursor: pointer;
+left: 65px;
+transition: .2s;
+} 
+.right-box input[type="submit"]:hover{
+background: #21f123;
+color: #000;
+transform: scale(.9);
+}
+.right-box span{
+font-size: 15px;
+position: relative;
+color: #000;
+text-transform: capitalize;
+font-weight: 500;
+background: transparent;
+top: 25px;
+margin-left: 47px;
+padding: 5px;
+}
+.right-box span a{
+text-decoration:none;
+color: blue;
+margin: 0px 40px;
+}
+.right-box h3{
+position: absolute;
+top: 15%;
+font-size: 28px;
+text-transform: capitalize;
+border-bottom: 2px solid #1486fe;
+margin: 3px;
+padding: 5px;
+}
+
+
+	</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<form>
+					<div class="form-box">
+						<div class="left-box">
+							<img src="image/form-imagae.png"/>
+							<h1>get started</h1>
+							<a href="#">
+								<button class="googlebtn1">sign in with google</button>
+							</a>
+							<h5>or</h5>
+							<a href="#">
+								<button class="googlebtn2">sign in with facebook</button>
+							</a>
+						</div>
+						<div class="right-box">
+						    <h3>login form</h3>
+							<div class="menu-button">
+								<button class="login-btn">login</button>
+								<button class="login-btn">ragitar</button>
+							</div>
+							<div class="name-box">
+								<div class="fname-box">
+									<label>fname</label><br>
+									<input type="text" placeholder="enter firs name" name="first-name" class="name" /><br>
+								</div>
+								<div class="lname-box">
+									<label>lname</label><br>
+									<input type="text" placeholder="enter last name" name="last-name" class="name" />
+								</div>
+							</div>
+							<!-- namr box compilited -->
+							<div class="email-box">
+							<label>your Email address</label><br>
+							<input type="email" placeholder="enter your email" name="email" class="email"/>
+							</div>
+							<div class="pass-box">
+							<div class="new-pass">
+								<label>password</label><br>
+								<input type="password" placeholder="type password" name="password" class="password"/><br>
+							</div>
+								<div class="con-pass">
+								<label>confirm-pass</label><br>
+								<input type="password" placeholder="type password" name="password" class="password"/>
+								</div>
+							</div>
+							<input type="submit" value="save-data" class="btn"/><br>
+							<span>already a member? <a href="#">go to login</a></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</header>
+	</body>
+</html>

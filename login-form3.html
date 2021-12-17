@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>login-form-3</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,200;1,300;1,400;1,500&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				margin: 0;
+				padding: 0;
+				background: #000;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				display: flex;
+				font-family: 'Poppins', sans-serif;
+		font-family: 'Readex Pro', sans-serif;
+			}
+			.form-box{
+				position: relative;
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+			.form-box .input-box{
+				position: relative;
+				background: transparent;
+				margin: 0;
+				display: flex;
+			}
+			.input-box .form-left{
+				padding: 60px 5px;
+				background: #2196f3;
+				height: 480px;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+			.input-box .form-left h1{
+				position: relative;
+				top: 0;
+				left: 0;
+				text-transform: uppercase;
+				font-size: 25px;
+				font-weight: bold;
+				color: #fff;
+				padding: 4px 10px;
+			}
+			.input-box .form-left h3{
+				margin: 10px;
+				color: #fff;
+				position: relative;
+				top: 10px;
+				text-transform: capitalize;
+				font-size: 16px;
+			}
+			.input-box .form-left p{
+				letter-spacing: 1px;
+				text-align: center;
+				width: 400px;
+				font-size: 16px;
+				position: relative;
+				top: 20px;
+			}
+			.input-box .form-left .left-btn{
+				border: none;
+				background: none;
+				font-size: 15px;
+				text-align: center;
+				color: #000;
+				font-weight: bold;
+				padding: 15px 30px;
+				background: #fff;
+				position: relative;
+				top:25px;
+				border-radius: 10px;
+				margin: 20px;
+			}
+			/* rihgt arae start here */
+			.input-box .form-right{
+				padding: 60px 15px;
+				background: linear-gradient(125deg,#FDA7DF,#7bed9f);
+				height:480px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			.input-box .form-right h1{
+				position: relative;
+				top: 0;
+				left: 0;
+				font-size: 25px;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				padding: 10px 10px;
+				letter-spacing: 1px;
+				color: #000;
+			}
+			.form-right h5{
+				width: 60px;
+				height: 60px;
+				background:transparent;
+				border-radius: 50%;
+				padding: 10px;
+				text-align: center;
+				margin: 0;
+				position: relative;
+				left: 36%;
+			}
+			.form-right h5 ion-icon{
+				font-size: 5em;
+				text-align: center;
+				font-weight: bold;
+				color: #000;
+			}
+			.form-right .name-box{
+				padding: 20px 5px;
+				display:flex;
+				position: relative;
+				top: 20px;
+			}
+			.form-right .name-box input{
+				padding:10px;
+				border-radius: 10px;
+				border: none;
+				outline: none;
+				color: #000;
+				text-transform: capitalize;
+				border: 1px solid #21f123;
+				margin: 5px;
+			}
+			.form-right .last-label{
+				position: relative;
+				top: 30px;
+				text-transform: capitalize;
+				text-align: center;
+				left: 30%;
+			}
+			.form-right .first-label{
+				position: relative;
+				top: 30px;
+				text-transform: capitalize;
+				text-align: center;
+			}
+			.form-right .email{
+				position: relative;
+				border-radius: 10px;
+				border: none;
+				outline: none;
+				color: #000;
+				text-transform: capitalize;
+				border: 1px solid #21f123;
+				margin: 10px;
+				width: 380px;
+				padding: 10px 5px;
+				top: 30px;
+			}
+			.form-right .password{
+				display:flex;
+				position: relative;
+				top: 30px;
+				padding: 30px 0px;
+			}
+			.form-right .password input{
+				position: relative;
+				padding:10px;
+				border-radius: 10px;
+				border: none;
+				outline: none;
+				color: #000;
+				text-transform: capitalize;
+				border: 1px solid #21f123;
+				margin: 0px 10px;
+			}
+			.form-right .pass2{
+				position: relative;
+				top: 55px;
+				text-transform: capitalize;
+				text-align: center;
+				left: 35%;
+				padding: 30px 0px;
+			}
+			.form-right .pass1{
+				position: relative;
+				top: 55px;
+				text-transform: capitalize;
+				text-align: center;
+			}
+			.form-right span{
+				position: relative;
+				display:flex;
+				padding: 20px 0px;
+			}
+			.form-right span input[type='checkbox']{
+				margin: 5px 10px;
+			}
+			.form-right span h4{
+				font-size: 12px;
+				text-align: center;
+				text-transform: capitalize;
+				color: #000;
+				font-weight: 600;
+				margin: 5px 10px;
+			}
+			.form-right input[type="submit"]{
+				position: relative;
+				top: 0;
+				left: 20px;
+				border: none;
+				border-radius: 10px;
+				font-size: 15px;
+				color: #fff;
+				font-weight: bold;
+				padding: 15px 60px;
+				background: none;
+				text-transform: capitalize;
+				text-align: center;
+				background: linear-gradient(to left,#ff9ff3,#5f27cd);
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<div class="form-box">
+				<div class="input-box">
+					<div class="form-left">
+						<h1>information</h1>
+						<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Suscipit quam unde aliquid reiciendis, magnam rerum dignissimos a mollitia at incidunt</p><br>
+						<h3>u ultricase:</h3>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quod veritatis repellat alias impedit laborum voluptates earum, laboriosam neque doloribus? Reiciendis laboriosam quo ab vitae enim. Est maxime illo, reprehenderit.</p>
+						<button class="left-btn">have an account</button>
+					</div>
+					<!-- form right start here -->
+					<div class="form-right">
+						<h5><ion-icon name="person-circle-outline"></ion-icon></h5>
+						<h1>ragistation form</h1>
+						<label class="first-label">first name</label>
+						<label class="last-label">last name</label>
+						<div class="name-box">
+							<input type="text" placeholder="first name"/>
+							<input type="text" placeholder="last name"/>
+						</div>
+						<input type="email" class="email" placeholder="your email"/><br>
+						<label class="pass1">password</label>
+						<label class="pass2">confirm password</label>
+						<div class="password">
+							<input type="password" placeholder="enter password"/>
+							<input type="password" placeholder="confirm password"/>
+						</div>
+						<span><input type="checkbox" name="radio"><h4>i agree your <a href="#">tirms and cundition</a></h4></span>
+						<input type="submit" value="register"/>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

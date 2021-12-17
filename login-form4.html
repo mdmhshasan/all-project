@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>login form 4</title>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,200;1,300;1,400;1,500&family=Readex+Pro:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+		<style type="text/css">
+*{
+	margin: 0;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	display: flex;
+	background: #333;
+	box-sizing: border-box;
+}
+.form-box{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 400px;
+	padding: 10px 20px;
+	background: #000;
+	box-shadow: 0px 0px 10px 1px #111;
+	border-radius: 10px;
+}
+.logo{
+	position:relative;
+	top: -60px;
+	left: 65px;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border-radius: 50%;
+	background: #111;
+	border: 2px solid #130f40;
+	box-shadow: -2px -2px 6px #30336b,2px 2px 7px #130f40;
+}
+.logo span ion-icon{
+	font-size: 5em;
+	text-align: center;
+	color: #3c40c6;
+	margin: 5px;
+}
+.form-box .input-box{
+	position: relative;
+	left: 0;
+	top: -30px;
+	width: 100%;
+	padding: 10px 5px;
+}
+.input-box input{
+	border: none;
+	text-align: left;
+	text-transform: capitalize;
+	padding: 10px 40px;
+	margin: 7px 0;
+	font-size: 16px;
+	outline: none;
+	background: none;
+	background: #000;
+	border: 3px solid #3B3B98;
+	border-radius: 10px;
+	box-shadow: inset -2px -2px 6px rgba(255, 255,255, 0.1),inset 2px 2px 6px rgba(0,0,0,0.8);
+}
+.input-box input[type="submit"]{
+	position: relative;
+	top: 20px;
+	left: 50px;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align:center;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 1px;
+	background: #000;
+	border: 3px solid #3B3B98;
+	cursor: pointer;
+	box-shadow:1px 1px 5px 0px #30336b,2px 2px 4px 0px #30336b;
+}
+::placeholder{
+	color: #eee;
+	text-align: left;
+}
+		</style>
+	</head>
+	<body>
+		<form action="#">
+			<div class="form-box">
+				<div class="logo"><span><ion-icon name="person-add-outline"></ion-icon></span></div>
+				<div class="input-box">
+					<input type="text" name="username" placeholder="enter username"/>
+					<input type="text" name="Email" placeholder="enter email"/>
+					<input type="password" name="password" placeholder=" enter password"/>
+					<input type="submit" value="sign in"/>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

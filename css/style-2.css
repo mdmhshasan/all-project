@@ -1,0 +1,338 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+}
+header{
+width: 100%;
+padding: 20px 0px;
+}
+.container{
+width: 1140px;
+margin: auto;
+}
+header .nav-bar{
+display: flex;
+justify-content:space-around;
+box-shadow: 30px 5px 5px #eee;
+}
+.nav-bar .logo{
+padding: 10px 0px;
+}
+.nav-bar .logo img{
+width: 100%;
+height: auto;
+}
+.nav-bar .menu-item{
+padding: 10px 0px;
+position: relative;
+left: -60px;
+}
+.menu-item ul{
+line-height: 50px;
+}
+.nav-bar .menu-item ul li{
+list-style: none;
+display: inline-block;
+transition: .5s ease-in-out;
+border-radius: 5px;
+}
+/* .nav-bar .menu-item ul li a:hover{
+background: #ff6162;
+color: #fff;
+} */
+.menu-item ul li a{
+text-decoration: none;
+font-size: 16px;
+text-align: center;
+color: #000;
+font-weight: 600;
+text-transform: capitalize;
+padding: 10px;
+margin: 10px;
+transition: .5s ease-in-out;
+border-radius: 5px;
+}
+
+.header-btn{
+padding: 10px;
+}
+.header-btn .menu-btn{
+border: none;
+background: none;
+font-size: 15px;
+text-align: center;
+text-transform: capitalize;
+padding: 15px 40px;
+letter-spacing: 1px;
+color: #fff;
+background: #FF6162;
+border-radius: 5px;
+outline: none;
+font-weight: 700;
+cursor: pointer;
+}
+/***********************************
+banner area style code start here
+***********************************/
+.banner-area{
+width: 100%;
+padding: 50px 0px;
+}
+.banner-area .banner-wraper{
+display: grid;
+grid-template-columns: auto auto;
+}
+.banner-wraper .banner-left{
+padding: 30px 0px;
+}
+.banner-wraper .banner-left h1{
+font-size: 50px;
+text-transform: capitalize;
+color: #000;
+position: relative;
+font-weight: bold;
+text-align: left;
+letter-spacing: 1px;
+padding: 0px 5px;
+margin-left: 30px;
+padding-bottom: 30px;
+left: 75px;
+}
+.banner-left p{
+font-size: 17px;
+padding: 5px 0px;
+text-transform: capitalize;
+text-align: center;
+text-align: center;
+margin: auto;
+}
+/*****************************
+banner right area style start here
+*********************************/
+.banner-right{
+padding: 38px 26px;
+}
+.banner-right img{
+width: 100%;
+height: auto;
+filter: brightness(90%);
+filter: contrast(170%);
+filter: blur(30px);
+filter: grayscale(100%);
+filter: hue-rotate(75deg);
+filter: saturate(150%);
+border-radius: 5px;
+}
+/* ***************************
+banner right ending here
+****************************/
+/*********************************
+projact area start from here
+********************************* */
+.projct-area{
+width: 100%;
+padding: 50px 0px;
+}
+.projct-area .p-gallery{
+display: grid;
+grid-template-columns: auto auto auto auto;
+}
+.p-gallery .projact-1{
+padding: 50px 0px;
+margin: 20px;
+border-radius: 5px;
+text-align: center;
+}
+.p-gallery .projact-1 img{
+width: 100%;
+height: auto;
+border-radius: 5px;
+margin: 20px 0px;
+transition: .4s ease-in-out;
+box-shadow: -2px -2px 5px rgba(0,0,0,.08),2px 2px 5px rgba(0,0,0,.08);
+border-top: 2px solid #f368e0;
+}
+.p-gallery .projact-1 img:hover{
+transform: scale(.9);
+box-shadow: 2px 2px -2px 2px #21f123;
+}
+.p-gallery h6{
+padding: 10px;
+font-size: 15px;
+text-transform: capitalize;
+font-weight: bold;
+color: #000;
+letter-spacing: 1px;
+}
+.p-gallery .child-2{
+position: relative;
+top: 30px;
+}
+.p-gallery .child-3{
+position: relative;
+top: 30px;
+}
+.page-title{
+padding: 40px 0px;
+margin: 5px;
+text-align: center;
+}
+.page-title h1{
+padding: 20px 0px;
+font-size: 40px;
+font-weight: 600;
+text-transform: capitalize;
+}
+.page-title p{
+text-align: center;
+font-size: 16px;
+color: #000;
+text-transform: capitalize;
+font-family: cursive;
+position: relative;
+font-family: cursive;
+width: 400px;
+margin: auto;
+}
+.line{
+width: 5px;
+height: 110px;
+background: linear-gradient(60deg,#fd79a8,#5f27cd);
+position: relative;
+left: 56%;
+top: 0;
+border-radius: 30px;
+}
+/* *****************************
+footer items code strt from here
+******************************* */
+.footer-items{
+width: 100%;
+padding: 50px 0px;
+}
+.footer-items .footer-content{
+text-align: center;
+}
+.item-box{
+margin-top: 50px;
+}
+.footer-items .page-title{
+padding: 20px 0px;
+text-align: center;
+}
+.footer-items .page-title h1{
+text-align: center;
+padding: 10px;
+text-transform: capitalize;
+color: #343;
+letter-spacing: 7px;
+}
+.footer-items .page-title p{
+text-align: center;
+padding: 20px 0px;
+}
+.footer-items .item-box{
+display: grid;
+grid-template-columns: auto auto auto;
+}
+.footer-items .item-box .item-1{
+padding:32px 24px ;
+background: #fff;
+border-radius: 10px;
+margin: 10px;
+box-shadow: -2px -2px 4px 5px #eee;
+transition: .5s ease-in-out;
+}
+.footer-items .item-box .item-1:hover{
+box-shadow: 2px 2px 4px 5px #eee;
+}
+.footer-items .item-box .item-1:hover span{
+color: #000;
+background: #ff6b81;
+border: 2px solid #fff;
+}
+.footer-items .item-box .item-1:hover span ion-icon{
+color: #fff;
+}
+.footer-items .item-box .item-1 span{
+color: #000;
+background: #fff;
+width: 70px;
+height: 70px;
+display: block;
+border-radius: 100%;
+margin: 20px auto;
+padding: 10px;
+line-height: 70px;
+border: 2px solid #ff6b81;
+transition: .5s ease-in-out;
+}
+.footer-items .item-box .item-1 span ion-icon {
+font-size: 30px;
+color: #ff6b81;
+}
+.item-box .item-1 h2{
+font-size: 15px;
+text-transform: capitalize;
+text-align: center;
+font-size: 20px;
+margin: 10px auto;
+}
+.item-box .item-1 p{
+font-size: 18px;
+text-transform: capitalize;
+font-weight: 500;
+color: #000;
+letter-spacing: 1px;
+margin: 10px 5px;
+}
+/******************************
+main footer area start here
+**************************** */
+.footer{
+width: 100%;
+padding: 10px 0px 0px 0px;
+}
+.footer-text{
+text-align: center;
+background: #292640;
+margin-top: 40px;
+border-top: 3px solid #FF6162;
+}
+.footer-text h1{
+width: 615px;
+letter-spacing: 1px;
+margin: auto;
+color: #fff;
+text-transform: capitalize;
+font-weight: 700;
+font-size: 54px;
+padding: 55px 0px;
+position: relative;
+top: 20px;
+left: 0;
+}
+.footer-text .footer-btn{
+border: none;
+background: none;
+font-size: 20px;
+text-align: center;
+font-weight: 600;
+text-transform: capitalize;
+color: #fff;
+background: #FF6162;
+padding: 15px 30px;
+border-radius: 10px;
+vertical-align: middle;
+margin: 30px 0px;
+}
+.footer-text .footer-img img{
+padding: 25px;
+}
